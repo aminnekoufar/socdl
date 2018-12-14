@@ -89,7 +89,7 @@ def send(bot,update,args):
     linkmusic = re.sub(r'.*\n', '', gettext)
     link = "soundscrape " + linkmusic
     web = "soundcloud"
-    db = MySQLdb.connect("localhost","root","0201243aA","socdl")
+    db = MySQLdb.connect("db_address","db_user","db_password","db_name
     cursor=db.cursor()
     chek = "SELECT `ChatId` FROM `users` WHERE 1"
     try:
